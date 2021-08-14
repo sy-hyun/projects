@@ -1,0 +1,58 @@
+<mvc:View controllerName="binding.databinding.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns="sap.m">
+
+	<Page id="page" title="프로퍼티 바인딩 SAMPLE PAGE">
+		<content>
+			<VBox>
+				<items>
+					<HBox>
+						<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+							subheader="{namedComponent>/teststring}" width="350px" header="Component 모델 바인딩(named)">
+						</GenericTile>
+					</HBox>
+
+					<HBox>
+						<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+							subheader="{namedCore>/teststring}" width="350px" header="Core model 바인딩(named)">
+						</GenericTile>
+					</HBox>
+
+					<HBox>
+						<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+							subheader="{namedView1>/teststring}" width="350px" header="View model바인딩(named)">
+						</GenericTile>
+					</HBox>
+
+					<HBox>
+						<GenericTile id="tileIdNamed" 
+							class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+							subheader="{namedControll>/teststring}" width="350px" header="Control model바인딩(named)">
+						</GenericTile>
+
+						<GenericTile id="tileIdDefault" 
+							class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+							subheader="{/teststring}" width="350px" header="Control model바인딩(Default)">
+						</GenericTile>
+
+						<GenericTile id="tileIdJSNamed" 
+							class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+						 	width="350px" header="메소드 바인딩(named)">
+						</GenericTile>
+
+						<GenericTile id="tileIdJSDefault" 
+							class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+							width="350px" header="메소드 바인딩(Default)">
+						</GenericTile>
+					</HBox>
+
+					<HBox>
+						<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+							subheader="{/teststring}" width="350px" header="이건 뭐가 바인딩 되는건지..?( Comp ? Core? View? Control? )">
+						</GenericTile>
+					</HBox>
+				</items>
+			</VBox>
+		</content>
+	</Page>
+
+</mvc:View>

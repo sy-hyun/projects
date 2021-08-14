@@ -1,0 +1,44 @@
+<mvc:View
+    controllerName="routing03.controller.Master"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+
+	<Page id="page" title="Master">
+		<content>
+            <!-- <Button text="Go" press="onGo"></Button> -->
+            <Table id="idTable" items="{/CarrierSet}">
+                                <columns>
+                                    <Column>
+                                        <Text text="ID" />
+                                    </Column>
+                                    <Column>
+                                        <Text text="Name" />
+                                    </Column>
+                                      <Column>
+                                        <Text text="Curreny" />
+                                    </Column>
+                                    <Column>
+                                        <Text text="Url" />
+                                    </Column>
+                                </columns>
+                                 <items>
+                                        <ColumnListItem type="Navigation" press="onGo">
+                                            <cells>
+                                                <Text
+                                                    text="{Carrid}" />
+                                                <Text
+                                                    text="{Carrname}" />
+                                                <Text
+                                                    text="{Currcode}" />
+                                                  <Text
+                                                    text="{Url}" />
+                                            </cells>
+                                        </ColumnListItem>
+                                    </items>
+                            </Table>
+        </content>
+	</Page>
+
+</mvc:View>

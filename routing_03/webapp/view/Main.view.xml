@@ -1,0 +1,14 @@
+<mvc:View
+    controllerName="routing03.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+    <!-- 기존에 있던 page 지움 -->
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

@@ -1,0 +1,127 @@
+<mvc:View
+    controllerName="routing03.controller.Detail"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
+>
+
+	<Page id="page" title="Detail" showNavButton="true" navButtonPress="onBack">
+	<content>
+            <!-- Panel (Header) -->
+
+                    <Panel expandable="true" expanded="false">
+                            <content>
+                            <f:SimpleForm layout="ResponsiveGridLayout">
+                            <f:title> <core:Title text="Airline"></core:Title></f:title>
+                            <f:content>
+                                <core:Title text="Header"></core:Title>
+
+                                <Label text = "ID">
+                                    <layoutData>
+                                        <l:GridData span="L2 M2 S10"></l:GridData>
+                                    </layoutData>
+                                </Label>
+                                <Input value="{Carrid}" enabled="true">
+                                    <layoutData>
+                                        <l:GridData span="L10 M10 S10"></l:GridData>
+                                    </layoutData>
+                                </Input>
+
+                                <Label text="Name">
+                                    <layoutData>
+                                        <l:GridData span="L2 M2 S12"></l:GridData>
+                                    </layoutData>                                
+                                </Label>
+                                <Input value="{Carrname}" enabled="true">
+                                    <layoutData>
+                                        <l:GridData span="L10 M10 S12"></l:GridData>
+                                    </layoutData>
+                                </Input>
+                                
+                                <Label text="Currency">
+                                    <layoutData>
+                                        <l:GridData span="L2 M2 S12"></l:GridData>
+                                    </layoutData>                                
+                                </Label>
+                                <Input value="{Currcode}" enabled="true">
+                                    <layoutData>
+                                        <l:GridData span="L10 M10 S12"></l:GridData>
+                                    </layoutData>
+                                </Input>
+
+                                <Label text="Homepage">
+                                    <layoutData>
+                                        <l:GridData span="L2 M2 S12"></l:GridData>
+                                    </layoutData>                                
+                                </Label>
+                                <Input value="{Url}" enabled="true">
+                                    <layoutData>
+                                        <l:GridData span="L10 M10 S12"></l:GridData>
+                                    </layoutData>
+                                </Input>
+                                
+                            </f:content>
+                        </f:SimpleForm>       
+                            </content>
+                        </Panel>
+
+            <!-- Table id="idConnections" or List id="idConnections" -->
+
+         <Table id="idConnections" items="{Connections}">
+                                <columns>
+
+                                    <Column>
+                                        <Text text="Carrid" />
+                                    </Column>
+                                    <Column>
+                                        <Text text="Connid" />
+                                    </Column>
+                                      <Column>
+                                        <Text text="Cityfrom" />
+                                    </Column>
+                                    <Column>
+                                        <Text text="Airpfrom" />
+                                    </Column>
+                                    <Column>
+                                        <Text text="Cityto" />
+                                    </Column>
+                                    <Column>
+                                        <Text text="Airpto" />
+                                    </Column>
+                                      <Column>
+                                        <Text text="Deptime" />
+                                    </Column>
+                                    <Column>
+                                        <Text text="Arrtime" />
+                                    </Column>
+                                </columns>
+                                 <items>
+                                        <ColumnListItem>
+                                            <cells>
+                                                <Text
+                                                    text="{Carrid}" />
+                                                <Text
+                                                    text="{Connid}" />
+                                                <Text
+                                                    text="{Cityfrom}" />
+                                                <Text
+                                                    text="{Airpfrom}" />
+                                                <Text
+                                                    text="{Cityto}" />
+                                                <Text
+                                                    text="{Airpto}" />
+                                                <Text
+                                                    text="{Deptime}" />
+                                                <Text
+                                                    text="{Arrtime}" />
+                                            </cells>
+                                        </ColumnListItem>
+                                    </items>
+                            </Table>
+        </content>
+	</Page>
+
+</mvc:View>

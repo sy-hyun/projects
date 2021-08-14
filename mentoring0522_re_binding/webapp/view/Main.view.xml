@@ -1,0 +1,20 @@
+<mvc:View
+    controllerName="student10.sap.training.mentoring0522rebinding.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<!-- <Text text='displayed'></Text> -->
+						<!-- <Text text='{testObj>/name}'></Text> -->
+						<Text text='{createModel>/name}'></Text>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

@@ -1,0 +1,9 @@
+<mvc:View controllerName="binding.databinding.controller.App" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+
+        <Button id="button1" text="goPage1" press="onButtonPress(1)" />
+        <Button id="button2" text="goPage2" press="onButtonPress(2)" />
+        <Button id="button3" text="goPage3" press="onButtonPress(3)" />
+        <App id="app"/>
+
+</mvc:View>

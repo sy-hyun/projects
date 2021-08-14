@@ -1,0 +1,14 @@
+<mvc:View
+    controllerName="mentoring0508.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+
+    <Page title="test" showNavButton="true" navButtonPress="onNavBack">
+
+        <Text text="text"/>
+
+    </Page>
+  
+</mvc:View>

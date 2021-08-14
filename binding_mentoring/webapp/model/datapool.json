@@ -1,0 +1,42 @@
+  {
+    "data1": [
+        {
+            "DocumentNumber" : "1000",
+            "Description" : "AK_012 Revoked"
+        },
+        {
+            "DocumentNumber" : "1000",
+            "Description" : "Regular Check"
+        },
+        {
+            "DocumentNumber" : "3000",
+            "Description" : "A-B45 Revoked on delivery"
+        },
+        {
+            "DocumentNumber" : "4000",
+            "Description" : "AK_012 Revoked"
+        }
+    ],
+    "data2":[
+        {
+            "DocumentNumber" : "0001",
+            "CompanyCode" : "sap1000"
+        },
+        {
+            "DocumentNumber" : "0001",
+            "CompanyCode" : "sap2000"
+        },
+        {
+            "DocumentNumber" : "0003",
+            "CompanyCode" : "sap3000"
+        },
+        {
+            "DocumentNumber" : "0004",
+            "CompanyCode" : "sap4000"
+        },
+        {
+            "DocumentNumber" : "0005",
+            "CompanyCode" : "sap5000"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+,
+        "sample": {
+          "stretch": true,
+          "files": [
+            "Order.view.xml",
+            "Order.controller.js",
+            "manifest.json"
+          ]
+        }
+
+
+이부분 원래 없었는데 sample 보고 넣은거
+근데 없어도 결과물은 같더라

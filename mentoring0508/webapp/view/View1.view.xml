@@ -1,0 +1,27 @@
+<mvc:View
+    controllerName="mentoring0508.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+   <Shell id="shell">
+      <App id="app">
+
+         <pages>
+		 	  	<Page>
+            <!-- <Page id="page" title="{i18n>title}"> -->
+
+               <content>
+                  <Image src = "./img/logo_ui5.png"></Image> 
+                  <Text text = "HelloUI5"></Text>
+                  <Button press = "onButtonbasic1" text="JS기본"></Button>
+                  <Button press = "onButtonbasic2" text="JS기본2"></Button>
+                  <Button press = "onButtonbasic1" text="JS기본"></Button>
+				  <Button press = "onButtonNav" text="new"/>
+               </content>
+               
+            </Page>
+         </pages>
+      </App>
+   </Shell>
+</mvc:View>

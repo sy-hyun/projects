@@ -1,0 +1,86 @@
+<mvc:View
+    controllerName="hyun.sap.training.bindingmentoring.controller.App"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Shell id="shell" backgroundColor="rgb(245,250,255)">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}" titleAlignment="Center">
+					<content>
+                        <IconTabBar
+							id="idIconTabBarStretchContent"
+							stretchContentHeight="true"
+							backgroundDesign="Translucent"
+							applyContentPadding="false"
+							expanded="{device>/isNoPhone}"
+							class="sapUiResponsiveContentPadding">
+                            <items>
+                                <IconTabFilter text="데이터1">
+                                    <ScrollContainer
+                                        height="100%"
+                                        width="100%"
+                                        horizontal="false"
+                                        vertical="true">
+                                        <Table items="{datapool>/data1}">
+                                            <columns>
+                                                <Column>
+                                                    <Text text="Document Number" />
+                                                </Column>
+                                                <Column>
+                                                    <Text text="Description" />
+                                                </Column>
+                                            </columns>
+                                            <items>
+                                                <ColumnListItem type="Navigation" press="onGo">
+                                                    <!-- <cells>
+                                                        <Text text="{datapool>DocumentNumber}" />
+                                                        <Text text="{datapool>Description}" />
+                                                    </cells> -->
+													<ObjectStatus
+                                                        text="{datapool>DocumentNumber}"
+														state="Information" />
+													<ObjectStatus
+                                                        text="{datapool>Description}" />
+                                                </ColumnListItem>
+                                            </items>
+                                        </Table>
+                                    </ScrollContainer>
+                                </IconTabFilter>
+
+                                <IconTabFilter text="데이터2">
+                                    <ScrollContainer
+										height="100%"
+										width="100%"
+										horizontal="false"
+										vertical="true">
+                                        <Table items="{datapool>/data2}">
+                                            <columns>
+                                                <Column>
+                                                    <Text text="Document Number" />
+                                                </Column>
+                                                <Column>
+                                                    <Text text="Company Code" />
+                                                </Column>
+                                            </columns>
+                                            <items>
+                                                <ColumnListItem type="Navigation" press="onGo">
+                                                    <ObjectStatus
+                                                        text="{datapool>DocumentNumber}"
+														state="Information" />
+													<ObjectStatus
+                                                        text="{datapool>CompanyCode}" />
+                                                </ColumnListItem>
+                                            </items>
+                                        </Table>
+                                    </ScrollContainer>
+                                </IconTabFilter>
+                            </items>
+                        </IconTabBar>
+                    </content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

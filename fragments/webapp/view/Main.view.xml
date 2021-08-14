@@ -1,0 +1,31 @@
+<mvc:View
+    controllerName="student10.sap.training.fragments.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core"
+>
+
+	<l:VerticalLayout>
+		<!-- <content> -->
+		<l:content>
+			<!-- <core: id="idJsFrag"/>
+			<core: id="idXmlFrag"/> -->
+			<core:Fragment id="idJsFrag" fragmentName="student10.sap.training.fragments.view.MyJsFrag" type="JS"/>
+		</l:content>
+		<l:content>
+			<core:Fragment id="idXmlFrag" fragmentName="student10.sap.training.fragments.view.MyXmlFrag" type="XML"/>
+		</l:content>
+	</l:VerticalLayout>
+	<!-- <Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content />
+				</Page>
+			</pages>
+		</App>
+	</Shell> -->
+
+</mvc:View>

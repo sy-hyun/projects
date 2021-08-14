@@ -1,0 +1,13 @@
+<mvc:View
+    controllerName="binding.databinding.controller.View3"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+
+	<Page id="page" title="어그리게이션 바인딩 SAMPLE PAGE">
+		<content>
+		</content>
+	</Page>
+
+</mvc:View>

@@ -1,0 +1,14 @@
+<mvc:View
+    controllerName="binding.databinding.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+
+	<Page id="page" title="컨텍스트 바인딩 SAMPLE PAGE">
+		<content>
+			<Button press='onButtonPress'></Button>
+		</content>
+	</Page>
+
+</mvc:View>
